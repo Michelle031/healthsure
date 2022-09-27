@@ -1,3 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    h1, h2, h3, h4 {
+        @apply font-bold;
+    }
+    .app {
+        font-family: "Poppins", system-ui, sans-serif;
+    }
+    .logo {
+        font-family: 'Dancing Script', cursive;
+    }
+    .hero {
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .card p {
+        color: #666;
+    }
+    div > .social {
+        padding: 6px;
+        border: 1px solid white;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    div > .social:hover {
+        background: white;
+        color: green;
+    }
+
+}
+
+@layer components {
+    .icon-con {
+        @apply p-2 max-w-fit bg-white rounded-lg group-hover:bg-green-50 ;
+    }
+    .icon {
+        @apply h-6 w-6 text-green-500;
+    }
+    .card {
+        @apply flex space-y-4 flex-col p-5 rounded-lg hover:bg-white;
+    }
+    .plan {
+        @apply flex flex-col items-center justify-center bg-white p-6 rounded-md space-y-4 hover:text-white hover:bg-green-600;
+    }
+    .plan p {
+        @apply text-xs group-hover:text-white;
+    }
+    .plan button {
+        @apply rounded-md bg-green-100 w-full py-3 text-sm font-bold text-green-500 hover:bg-yellow-400 hover:text-black transition duration-150 ease-in-out;
+    }
+    .plan ul {
+        @apply !mt-8 text-xs font-bold space-y-3 list-none inline w-full px-3;
+    }
+    .social {
+        @apply h-8 w-8 ;
+    }
+    .space {
+        @apply space-y-3;
+    }
+    .space p {
+        @apply hover:text-yellow-200 cursor-pointer;
+    }
+    .login form input {
+        @apply bg-gray-100 p-2 px-4  outline-none rounded-md;
+    }
+    .effect {
+        @apply transition duration-150 ease-in-out;
+    }
+}
+
+h3 {
+    font-size: large;
+}
+.amt {
+    font-size: xx-large !important;
+    margin: 40px 0 25px 0 !important;
+} 
+.amt span {
+    font-size: small;
+}
+li::before {
+    content: "\2714"; 
+    padding-right: 8px;
+    color: green; 
+}
+
