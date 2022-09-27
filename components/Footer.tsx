@@ -6,7 +6,7 @@ import { MdLocationOn, MdEmail } from "react-icons/md"
 
 function Footer() {
     return (
-        <div className='flex flex-col items-center text-white bg-green-600 px-7 lg:px-14 py-5 lg:py-10 pb-[70px] text-sm'>
+        <div className='flex flex-col items-center text-white bg-green-600 px-6 lg:px-14 py-5 lg:py-10 pb-[70px] text-sm'>
             <div className='grid grid-cols-1 md:grid-cols-5  gap-8 mb-10'>
                 <div className='space-y-3 md:col-span-2'>
                     <div className='p-3 bg-yellow-400 w-fit rounded-md'><Logo /></div>

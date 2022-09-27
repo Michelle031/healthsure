@@ -34,7 +34,7 @@ function Nav() {
     }
   }, [])
   return (
-    <nav className={`fixed top-0 left-0 ${navbar ? "bg-yellow-300" : "bg-transparent"} z-50 h-[60px] flex justify-between w-full items-center px-7 lg:px-14 py-5 text-white mx-auto`}>
+    <nav className={`fixed top-0 left-0 ${navbar ? "bg-yellow-300" : "bg-transparent"} z-50 h-[60px] flex justify-between w-full items-center px-6 lg:px-14 py-5 text-white mx-auto`}>
         <Logo />
         <div className='flex items-center fixed h-[60px] bg-yellow-300 lg:bg-transparent bottom-0 left-0 lg:static lg:min-w-fit min-w-[100vw] p-4 lg:0 justify-center lg:justify-0 space-x-8 cursor-pointer '>
             <NavItem text="Home"/>
