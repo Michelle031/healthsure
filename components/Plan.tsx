@@ -36,7 +36,7 @@ function Plan(props: Props) {
     <div className='plan group'>
                 <h3>{props.plan}</h3>
                 <p>Fast track design thinking yet quarterly <br/> sales are at an all-time low </p>
-                <p className="amt">${props.price}<span>/month</span></p>
+                <p className="amt">₦ {props.price}<span> per annum</span></p>
                 <button onClick={selectPlan}>Purchase now</button>
                 <ul>
                     <li>{props.healthcare} months of health care</li>
