@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router';
 import React from 'react'
 import { useStateValue } from '../context/StateProvider';
+import { checkout } from "./checkout"
 
 interface Props {
+    id: string,
     plan: string,
     price: number,
     healthcare: string,
@@ -19,7 +21,13 @@ function Plan(props: Props) {
             plan: {
                 ...props,
             }
-        })
+        });
+        checkout({
+          lineItems: [{
+            price: props.id,
+            quantity: 1,
+          }]
+        });
       } else {
          router.push("/login");
       }
