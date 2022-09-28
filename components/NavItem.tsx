@@ -11,7 +11,7 @@ function NavItem(props: Props) {
     router.push(`#${props.text.toLowerCase()}`);
   }
   return (
-    <div onClick={route} className='hover:text-green-500 hover:scale-105 transition-all duration-150 ease-in'>
+    <div onClick={route} className={`${router.asPath.includes(props.text.toLowerCase()) ? "active" : ""} hover:text-green-500 hover:scale-105 transition-all duration-150 ease-in`}>
         {props.text}
     </div>
   )

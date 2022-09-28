@@ -73,6 +73,9 @@
     .effect {
         @apply transition duration-150 ease-in-out;
     }
+    .active {
+        @apply text-green-500;
+    }
 }
 
 h3 {
