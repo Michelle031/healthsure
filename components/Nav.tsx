@@ -50,7 +50,7 @@ function Nav() {
         </div>
         <div className='lg:hidden h-7 w-7' onClick={() => setShow(!show)}><Bars3Icon /></div>
         </div>
-        <div className={`${show ? "translate-y-[0]": "-translate-y-[300px]"} flex flex-col mt-4 bg-yellow-300 p-4 h-fit text-white items-center justify-center space-y-6 cursor-pointer transition-transform duration-300 ease-in-out `}>
+        <div className={`${show ? "translate-y-[0]": "-translate-y-[400px]"} flex flex-col mt-4 bg-yellow-300 p-4 h-fit text-white items-center justify-center space-y-6 cursor-pointer transition-transform duration-300 ease-in-out `}>
             <NavItem text="Home"/>
             <NavItem text="About" />
             <NavItem text="Plans" />
