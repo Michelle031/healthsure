@@ -14,6 +14,8 @@ function Login() {
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
           const user = userCredential.user;
+          setEmail("");
+          setPassword("");
           router.push("/");
       })
       .catch((e) => alert(e.message))
@@ -24,6 +26,8 @@ function Login() {
     .then(userCredential => {
         //created
         const user = userCredential.user;
+        setEmail("");
+        setPassword("");
         router.push("/");
     })
     .catch((e) => alert(e.message))
